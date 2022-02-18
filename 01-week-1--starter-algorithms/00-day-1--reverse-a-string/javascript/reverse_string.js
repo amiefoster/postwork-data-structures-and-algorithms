@@ -1,5 +1,13 @@
 function reverseString(str) {
-  // type your code here
+  let stringArr = str.split("")
+  let length = stringArr.length
+  let newArr = []
+  // console.log(stringArr)
+
+  for (let i = length - 1; i >= 0; i --){
+    newArr.push(stringArr[i])    
+  }
+  return newArr.join("")
 }
 
 if (require.main === module) {
